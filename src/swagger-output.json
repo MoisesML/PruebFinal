@@ -79,14 +79,6 @@
         }
       }
     },
-    "/hey": {
-      "get": {
-        "tags": [],
-        "description": "",
-        "parameters": [],
-        "responses": {}
-      }
-    },
     "/api/products/": {
       "post": {
         "tags": [],
