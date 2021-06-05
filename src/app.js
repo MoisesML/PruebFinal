@@ -13,7 +13,7 @@ import { createRoles, createAdmin } from './libs/initialSetup'
 
 import swaggerUi from 'swagger-ui-express'
 import swaggerFile from './swagger-output.json'
-import bodyParser from 'body-parser'
+// import bodyParser from 'body-parser'
 
 const app = express();
 createRoles();
