@@ -1,5 +1,5 @@
 import express from 'express'
-import morgan from 'morgan' // Middleware de express
+// import morgan from 'morgan' // Middleware de express
 import cors from 'cors'
 import helmet from 'helmet'
 
@@ -24,11 +24,11 @@ app.set('port', process.env.PORT || 4000);
 
 app.use(cors());
 app.use(helmet());
-app.use(morgan('dev')); // sirve para mostrar las solicitudes que se hacen al servidor
+// app.use(morgan('dev')); // sirve para mostrar las solicitudes que se hacen al servidor
 app.use(express.json()); //Para que entienda los objetos json que llegan al servidor
 app.use(express.urlencoded({ extended : false }));
 
-app.use(bodyParser.json())
+// app.use(bodyParser.json())
 app.use('/doc', swaggerUi.serve, swaggerUi.setup(swaggerFile))
 
 app.get('/', (req, res) => {
